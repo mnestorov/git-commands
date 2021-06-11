@@ -1,5 +1,3 @@
-# git-commands
-Git command reference
 # Git
 
 Git command reference.
