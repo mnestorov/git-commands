@@ -223,3 +223,58 @@ For those new to command line, ending up at the commit message screen (often whe
 ```
 
 And press enter, and you'll return to where you were.
+
+# GitHub
+
+## Adding an existing project to GitHub using the command line
+
+### 1. Initialize the local directory as a Git repository.
+
+```
+$ git init -b main
+```
+### 2. Add the files in your new local repository. This stages them for the first commit.
+
+```
+$ git add .
+```
+
+The code above adds the files in the local repository and stages them for commit. To unstage a file, use **git reset HEAD YOUR-FILE**.
+
+### 3. Commit the files that you've staged in your local repository.
+
+```
+$ git commit -m "First commit"
+```
+
+The code above commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use **git reset --soft HEAD~1** and commit and add the file again.
+
+### 4. At the top of your GitHub repository's Quick Setup page, click to copy the remote repository URL. 
+
+<img src="https://github.com/mnestorov/git-commands/blob/main/RemoteRepositoryUrl.png">
+
+### 5. In the Command prompt, add the URL for the remote repository where your local repository will be pushed.
+
+```
+$ git remote add origin  <REMOTE_URL> 
+# Sets the new remote
+$ git remote -v
+# Verifies the new remote URL
+```
+
+### 6. Push the changes in your local repository to GitHub.
+
+```
+$ git push origin main
+```
+
+The code above pushes the changes in your local repository up to the remote repository you specified as the origin.
+
+## Change GitHub branch on local machine when the branch name is changed
+
+```
+git branch -m main objects
+git fetch origin
+git branch -u origin/objects objects
+git remote set-head origin -a
+```
