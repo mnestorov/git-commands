@@ -171,6 +171,13 @@ git checkout --track origin/<remote_branch_name>
 git pull -Xtheirs
 ```
 
+## Delete local and remote tag
+
+```bash
+git push --delete origin tagName
+git tag -d tagName
+```
+
 ## Rebase from develop
 
 ```bash
