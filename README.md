@@ -95,6 +95,17 @@ git merge --no-ff <their-branch) (:wq!)
 git push origin master
 ```
 
+## Rename branch
+
+If you have a local clone, you can update it by running the following commands.
+
+```bash
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
+
 ## Remove branch
 
 Put a `:` in front to remove instead of update remotely.
