@@ -296,3 +296,16 @@ git fetch origin
 git branch -u origin/objects objects
 git remote set-head origin -a
 ```
+
+## Git Workflow
+
+```
+git checkout main
+git pull origin main
+git checkout -b <new branch name here>
+git status
+git add themes/.../header.php # add only this file for commit
+git add . # add all changed files
+git commit -m "Commit message"
+git push origin <branch name>
+```
