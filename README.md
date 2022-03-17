@@ -2,6 +2,36 @@
 
 Git command reference.
 
+**BITBUCKET / GITHUB / GITLAB**
+
+- [Upload all files in a local directory to a new Git repository](#upload-all-files-in-a-local-directory-to-a-new-git-repository)
+- [Download all files from Git repository to a local directory](#download-all-files-from-git-repository-to-a-local-directory)
+- [Remove one file from Git cache](#remove-one-file-from-git-cache)
+- [Override entire local directory](#override-entire-local-directory)
+- [Ignore a directory](#ignore-a-directory)
+- [Add gitignore to an existing repository](#add-gitignore-to-an-existing-repository)
+- [Force a push or pull](#force-a-push-or-pull)
+- [Merging changes from remote pull request with conflicts](#merging-changes-from-remote-pull-request-with-conflicts)
+- [Rename branch](#rename-branch)
+- [Remove branch](#remove-branch)
+- [Replace master with contents of another branch](#replace-master-with-contents-of-another-branch)
+- [Remove all local branches except master](#remove-all-local-branches-except-master)
+- [Allow empty commit](#allow-empty-commit)
+- [Merge new-feature branch into master](#merge-new-feature-branch-into-master)
+- [Switch to branch that exists on origin](#switch-to-branch-that-exists-on-origin)
+- [Fetch branch from origin](#fetch-branch-from-origin)
+- [Accept all incoming changes](#accept-all-incoming-changes)
+- [Delete local and remote tag](#delete-local-and-remote-tag)
+- [Rebase from develop](#rebase-from-develop)
+- [Stashing](#stashing)
+- [Accidentally committed to develop and want to move that commit to a branch](#acidentally-committed-to-develop-and-want-to-move-that-commit-to-a-branch)
+- [Subtree within repo](#subtree-within-repo)
+- [Exiting VIM](#exiting-vim)
+
+**GITHUB SPECIFIC**
+
+- [GitHub pages to non-docs folder](#github-pages-to-non-docs-folder)
+
 ## Upload all files in a local directory to a new Git repository
 
 If you have a project on your computer and you just created an empty Git repository in GitHub, use these commands to upload everything to Git.
@@ -51,7 +81,7 @@ git rm -r --cached your-directory
 
 Then push the changes.
 
-## Add .gitignore to an existing repository
+## Add gitignore to an existing repository
 
 Similar to above, but if you've added a `.gitignore` with a lot of changes.
 
@@ -216,14 +246,6 @@ git reset HEAD~1
 git checkout <files>
 ```
 
-## GitHub pages to non-docs folder
-
-"dist" or whatever you want.
-
-```bash
-git subtree push --prefix dist origin gh-pages
-```
-
 ## Subtree within repo
 
 ```bash
@@ -295,6 +317,14 @@ git branch -m main objects
 git fetch origin
 git branch -u origin/objects objects
 git remote set-head origin -a
+```
+
+## GitHub pages to non-docs folder
+
+"dist" or whatever you want.
+
+```bash
+git subtree push --prefix dist origin gh-pages
 ```
 
 ## Git Workflow
