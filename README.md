@@ -89,6 +89,227 @@ Git command reference.
 
 ---
 
+## Setting up Git
+
+### Configure your name and email
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+## Basic Git Commands
+
+### Initialize a new Git repository
+
+```
+git init
+```
+
+### Clone a remote repository
+
+```
+git clone https://github.com/user/repo.git
+```
+
+### Check the status of your repository
+
+```
+git status
+```
+
+### Stage files for commit
+
+```
+git add file_name
+```
+
+### Stage all files in the repository for commit
+
+```
+git add .
+```
+
+### Commit staged files with a message
+
+```
+git commit -m "Commit message"
+```
+
+### Show the commit history
+
+```
+git log
+```
+
+### Show the commit history in a graph format
+
+```
+git log --graph --oneline --decorate
+```
+
+### Show the differences between the working directory and the last commit
+
+```
+git diff
+```
+
+## Branching and Merging
+
+### List all branches
+
+```
+git branch
+```
+
+### Create a new branch
+
+```
+git branch new_branch
+```
+
+### Switch to a different branch
+
+```
+git checkout branch_name
+```
+
+### Create and switch to a new branch in one command
+
+```
+git checkout -b new_branch
+```
+
+### Merge a branch into the current branch
+
+```
+git merge branch_name
+```
+
+### Delete a branch
+
+```
+git branch -d branch_name
+```
+
+## Remote Repositories
+
+### Show a list of remote repositories
+
+```
+git remote -v
+```
+
+### Add a remote repository
+
+```
+git remote add remote_name https://github.com/user/repo.git
+```
+
+### Fetch changes from a remote repository
+
+```
+git fetch remote_name
+```
+
+### Pull changes from a remote repository and merge them into the current branch
+
+```
+git pull remote_name branch_name
+```
+
+### Push changes to a remote repository
+
+```
+git push remote_name branch_name
+```
+
+### Remove a remote repository
+
+```
+git remote rm remote_name
+```
+
+## Stashing
+
+### Stash changes in the working directory
+
+```
+git stash
+```
+
+### Apply the latest stashed changes
+
+```
+git stash apply
+```
+
+### Apply a specific stash
+
+```
+git stash apply stash@{stash_number}
+```
+
+### Drop a specific stash
+
+```
+git stash drop stash@{stash_number}
+```
+
+### List all stashes
+
+```
+git stash list
+```
+
+## Tagging
+
+### List all tags
+
+```
+git tag
+```
+
+### Create a new tag
+
+```
+git tag -a tag_name -m "Tag message"
+```
+
+### Push tags to a remote repository
+
+```
+git push remote_name --tags
+```
+
+## Undoing and Reverting
+
+### Unstage a file
+
+```
+git reset HEAD file_name
+```
+
+### Revert changes in a file to the last commit
+
+```
+git checkout -- file_name
+```
+
+### Revert a commit (creates a new commit that undoes the changes)
+
+```
+git revert commit_hash
+```
+
+### Reset the working directory to a specific commit
+
+**WARNING:** This will discard all uncommitted changes
+
+```
+git reset --hard commit_hash
+```
+
 ## Upload all files in a local directory to a new Git repository
 
 If you have a project on your computer and you just created an empty Git repository in GitHub, use these commands to upload everything to Git.
