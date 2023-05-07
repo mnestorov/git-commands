@@ -1,6 +1,6 @@
-# Git
+# Git Commands
 
-Git command reference.
+These advanced Git commands and techniques will help you take your Git skills to the next level, allowing you to more effectively manage and collaborate on complex code projects.
 
 ## Setting up Git
 
