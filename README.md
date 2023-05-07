@@ -2,7 +2,62 @@
 
 Git command reference.
 
-**BITBUCKET / GITHUB / GITLAB**
+## Setting up Git
+
+- [Configure your name and email](#configure-your-name-and-email)
+
+## Basic Git Commands
+
+- [Initialize a new Git repository](#initialize-a-new-git-repository)
+- [Clone a remote repository](#clone-a-remote-repository)
+- [Check the status of your repository](#check-the-status-of-your-repository)
+- [Stage files for commit](#stage-files-for-commit)
+- [Stage all files in the repository for commit](#stage-all-files-in-the-repository-for-commit)
+- [Commit staged files with a message](#commit-staged-files-with-a-message)
+- [Show the commit history](#show-the-commit-history)
+- [Show the commit history in a graph format](#show-the-commit-history-in-a-graph-format)
+- [Show the differences between the working directory and the last commit](#show-the-differences-between-the-working-directory-and-the-last-commit)
+
+## Branching and Merging
+
+- [List all branches](#list-all-branches)
+- [Create a new branch](#create-a-new-branch)
+- [Switch to a different branch](#switch-to-a-different-branch)
+- [Create and switch to a new branch in one command](#create-and-switch-to-a-new-branch-in-one-command)
+- [Merge a branch into the current branch](#merge-a-branch-into-the-current-branch)
+- [Delete a branch](#delete-a-branch)
+
+## Remote Repositories
+
+- [Show a list of remote repositories](#show-a-list-of-remote-repositories)
+- [Add a remote repository](#add-a-remote-repository)
+- [Fetch changes from a remote repository](#fetch-changes-from-a-remote-repository)
+- [Pull changes from a remote repository and merge them into the current branch](#pull-changes-from-a-remote-repository-and-merge-them-into-the-current-branch)
+- [Push changes to a remote repository](#push-changes-to-a-remote-repository)
+- [Remove a remote repository](#remove-a-remote-repository)
+
+## Stashing
+
+- [Stash changes in the working directory](#stash-changes-in-the-working-directory)
+- [Apply the latest stashed changes](#apply-the-latest-stashed-changes)
+- [Apply a specific stash](#apply-a-specific-stash)
+- [Drop a specific stash](#drop-a-specific-stash)
+- [List all stashes](#list-all-stashes)
+
+## Tagging
+
+- [List all tags](#list-all-tags)
+- [Create a new tag](#create-a-new-tag)
+- [Push tags to a remote repository](#push-tags-to-a-remote-repository)
+
+## Undoing and Reverting
+
+- [Unstage a file](#unstage-a-file)
+- [Revert changes in a file to the last commit](#revert-changes-in-a-file-to-the-last-commit)
+- [Revert a commit (creates a new commit that undoes the changes)](#revert-a-commit-creates-a-new-commit-that-undoes-the-changes)
+- [Reset the working directory to a specific commit](#reset-the-working-directory-to-a-specific-commit)
+
+## Other Commands for BitBucket / GitHub / GitLab
 
 - [Upload all files in a local directory to a new Git repository](#upload-all-files-in-a-local-directory-to-a-new-git-repository)
 - [Download all files from Git repository to a local directory](#download-all-files-from-git-repository-to-a-local-directory)
@@ -28,9 +83,11 @@ Git command reference.
 - [Subtree within repo](#subtree-within-repo)
 - [Exiting VIM](#exiting-vim)
 
-**GITHUB SPECIFIC**
+## GitHub Specific Commands
 
 - [GitHub pages to non-docs folder](#github-pages-to-non-docs-folder)
+
+---
 
 ## Upload all files in a local directory to a new Git repository
 
@@ -339,3 +396,9 @@ git add . # add all changed files
 git commit -m "Commit message"
 git push origin <branch name>
 ```
+
+---
+
+## License
+
+This project is released under the MIT License.
