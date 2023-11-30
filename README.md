@@ -1,5 +1,9 @@
 # Git Commands
 
+![Licence](https://img.shields.io/badge/Unlicense-red)
+
+## Overview
+
 These advanced Git commands and techniques will help you take your Git skills to the next level, allowing you to more effectively manage and collaborate on complex code projects.
 
 ## Setting up Git
@@ -624,4 +628,4 @@ git push origin <branch name>
 
 ## License
 
-This project is released under the MIT License.
+This repository is unlicense[d], so feel free to fork.
